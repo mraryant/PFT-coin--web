@@ -1,0 +1,105 @@
+#hero-section{
+    border-radius:0px 0px 50px 50px ;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    /* background-color: var(--bg-light-blue); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+     
+}
+ 
+#hero-section-left{
+    z-index: 1;
+    min-height: 60vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    gap: 50px;
+}
+#hero-section-left>h1{
+    font-size: 3vmax;
+}
+#hero-section-left>p{
+    font-size: 1.3vmax;
+    font-weight: 200;
+}
+#hero-section-right{
+    min-height: 100vmin;
+    width:330px;
+    position: relative;
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+#hero-buttons{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    
+}
+#hero-buttons>button{
+    border: 2px solid var(--golden) ;
+}
+#hero-section-right>img{
+    display: flex;
+    z-index: 1;
+    justify-content:start;
+    /* align-items: center; */
+     height: 550px;
+     position: absolute;
+     object-fit: cover;
+}
+
+#hero-section>img{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: -40vmin;
+    /* height: 100%; */ 
+}
+#hero-section>video{
+height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-size: cover; */
+    background-position: bottom;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.7  ;
+    top: 0px;
+    border-radius: 0px 0px 50px 50px;
+}
+
+ @media (max-width: 1164px) {
+    #hero-section {
+        flex-direction: column-reverse;
+    }
+    #hero-section-left {
+           
+            width: 75vw;
+            display: flex;
+            justify-content: flex-start;
+    
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 30px;
+    }
+    #hero-section-right>img {
+            height: 77vmin;
+    }
+    #hero-section-left>h1 {
+        font-size: 4vmax;
+    }
+
+    #hero-section-left>p {
+        font-size: 2.5vmax;
+        font-weight: 200;
+    }
+ }

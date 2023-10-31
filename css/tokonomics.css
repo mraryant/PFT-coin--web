@@ -1,0 +1,125 @@
+#tokonomics{
+    position: relative;
+        min-height: 90vh;
+        width: 100vw;
+        /* background-color: var(--bg-dark-blue); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-around;
+}
+.toko-heading{
+    border-bottom: 4px solid white;
+    margin-top: 30px;
+}
+.toko-heading>h1{
+        letter-spacing: 1px; 
+        font-size: 40px;
+        background-image: linear-gradient(to right, #F65741, #C53678);
+            /* Define your gradient colors here */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            /* font-size: 36px; */
+        
+}
+
+#toko-bottom{
+    display: flex;
+    min-height: 100%;
+    width: 90%;
+    padding: 30px;
+    justify-content: space-evenly;
+    gap: 6vmax;
+    
+
+
+}
+#toko-bottom-left{
+    width: 30vmax;
+    /* height: 500px; */
+    /* position: relative; */
+    display: flex;
+     margin: 20px;
+    align-items: center;
+    object-fit: contain;
+}
+#toko-bottom-left>img{
+    /* position: absolute; */
+    width: 100%;
+}
+
+#mid-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#toko-bottom-mid{
+    width: 45vmin;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+#toko-bottom-mid {
+    font-size: 2.6vmin;
+}
+#toko-bottom-right{
+    width: 45vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#toko-bottom-right {
+    font-size: 2vmin;
+}
+#toko-bottom-right>div {
+    background-color:rgb(215, 57, 247,0.3);
+    border-radius: 20px;
+    width: 100%;
+    padding:10px 10px 10px 5vmin;
+    display: flex;
+    
+}
+#toko-bottom-right>div>h4{
+    font-weight: 500;
+}
+
+@media (max-width: 1147px){
+    #toko-bottom {
+        flex-direction: column;
+            align-items: center;
+    }
+        #toko-bottom-left {
+            width: 40vmax;
+        }
+}
+
+@media (max-width:555px){
+    #mid-right {
+        flex-direction: column;
+        gap: 60px;
+         
+    }
+    #toko-bottom-mid {
+            text-align: center;
+            
+    }
+ #toko-bottom-right {
+    width: fit-content;
+     font-size: 3vmin;
+ }
+ #toko-bottom-mid {
+    width: fit-content;
+     font-size: 4vmin;
+    gap: 30px;
+ }
+ #toko-bottom-right>div {
+    justify-content: center;
+ }
+}

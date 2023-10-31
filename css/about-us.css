@@ -1,0 +1,108 @@
+#about-us{
+   
+        position: relative;
+            min-height: 100vh;
+            width: 100vw;
+            /* background-color: var(--bg-dark-blue); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+}
+#about-box{
+    
+    /* background: linear-gradient(275deg, rgba(235, 235, 235, 0.2), rgba(0,0,0,0.5)); */
+    /* background-color: var(--black); */
+    /* opacity: 0.5; */
+    border-radius: 30px;
+    border: 2px solid var(--golden);
+    min-height: 80%;
+    width: 80%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px 6vmax 20px 6vmax;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+#about-box>img {
+    position: absolute;
+    opacity: 0.5;
+    filter: brightness(0.5);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top:0;
+    border-radius: 30px;
+    z-index: -1;
+}
+#about-box>h1 {
+    font-size: 5.5vmin;
+}
+#about-box>h2 {
+     font-size: 1.3vmax;
+    text-align: center;
+    font-weight: 600;
+    z-index: 10;
+}
+.about-greencheak{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     transition: all 0.3s ease-in-out;
+     /* transition: all 0.4s ease-in-out 0s, 1 1s linear 0.5s; */
+}
+.about-greencheak>h3{
+    font-size: 1.5vmax;
+    font-weight: 400;
+    text-align: center;
+}
+#green-cheak-boxes{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+}
+#about-greencheak>img{
+    width: 1vmin;
+}
+#about-greencheak-cheak2{
+     
+     position: absolute;
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1190px){
+    .about-greencheak>h3 {
+            font-size: 2vmax;
+            font-weight: 400;
+            text-align: center;
+            
+        }
+     #about>h2 {
+            font-size: 7vmax;
+        }
+}
+@media (max-width:805px){
+  
+                #about-box {
+                    width: 90%;
+                }
+                #about-box>h2 {
+                    padding: 10px   0px  ;
+                    font-size: 2.5vmax;
+                    font-weight: 500;
+                }
+}
